@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51DD742B29B643DF00F667F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742A29B643DF00F667F3 /* MainView.swift */; };
+		51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742C29B643F500F667F3 /* LibraryView.swift */; };
+		51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742E29B6440400F667F3 /* ButtonsView.swift */; };
+		51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743029B64D8E00F667F3 /* ExperimentsView.swift */; };
+		51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */; };
+		51DD743B29B6542100F667F3 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743A29B6542100F667F3 /* CameraPreviewView.swift */; };
+		51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743C29B6616900F667F3 /* RedactedView.swift */; };
+		51DD744029B6636C00F667F3 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743F29B6636C00F667F3 /* MaskView.swift */; };
+		51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD744129B6CF2600F667F3 /* GradientView.swift */; };
 		51FEFCF529B641F0008F2A12 /* SwiftUIWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */; };
 		51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFCF629B641F0008F2A12 /* ContentView.swift */; };
 		51FEFCF929B641F2008F2A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FEFCF829B641F2008F2A12 /* Assets.xcassets */; };
@@ -34,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51DD742A29B643DF00F667F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		51DD742C29B643F500F667F3 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		51DD742E29B6440400F667F3 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		51DD743029B64D8E00F667F3 /* ExperimentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentsView.swift; sourceTree = "<group>"; };
+		51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectiveUIView.swift; sourceTree = "<group>"; };
+		51DD743A29B6542100F667F3 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		51DD743C29B6616900F667F3 /* RedactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedView.swift; sourceTree = "<group>"; };
+		51DD743F29B6636C00F667F3 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
+		51DD744129B6CF2600F667F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		51FEFCF129B641F0008F2A12 /* SwiftUIWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldApp.swift; sourceTree = "<group>"; };
 		51FEFCF629B641F0008F2A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +90,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51DD743229B64DED00F667F3 /* Experiments */ = {
+			isa = PBXGroup;
+			children = (
+				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
+				51DD743529B6503C00F667F3 /* ReflectiveUI */,
+			);
+			path = Experiments;
+			sourceTree = "<group>";
+		};
+		51DD743529B6503C00F667F3 /* ReflectiveUI */ = {
+			isa = PBXGroup;
+			children = (
+				51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */,
+				51DD743A29B6542100F667F3 /* CameraPreviewView.swift */,
+			);
+			path = ReflectiveUI;
+			sourceTree = "<group>";
+		};
+		51DD743E29B6635100F667F3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				51DD742C29B643F500F667F3 /* LibraryView.swift */,
+				51DD742E29B6440400F667F3 /* ButtonsView.swift */,
+				51DD743C29B6616900F667F3 /* RedactedView.swift */,
+				51DD743F29B6636C00F667F3 /* MaskView.swift */,
+				51DD744129B6CF2600F667F3 /* GradientView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		51FEFCE829B641F0008F2A12 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +145,9 @@
 			children = (
 				51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */,
 				51FEFCF629B641F0008F2A12 /* ContentView.swift */,
+				51DD742A29B643DF00F667F3 /* MainView.swift */,
+				51DD743E29B6635100F667F3 /* Library */,
+				51DD743229B64DED00F667F3 /* Experiments */,
 				51FEFCF829B641F2008F2A12 /* Assets.xcassets */,
 				51FEFCFA29B641F2008F2A12 /* SwiftUIWorld.entitlements */,
 				51FEFCFB29B641F2008F2A12 /* Preview Content */,
@@ -259,7 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DD744029B6636C00F667F3 /* MaskView.swift in Sources */,
+				51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */,
+				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
+				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
+				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
+				51DD743B29B6542100F667F3 /* CameraPreviewView.swift in Sources */,
 				51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */,
+				51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */,
+				51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */,
+				51DD742B29B643DF00F667F3 /* MainView.swift in Sources */,
 				51FEFCF529B641F0008F2A12 /* SwiftUIWorldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +479,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For reflective ui";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +518,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For reflective ui";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

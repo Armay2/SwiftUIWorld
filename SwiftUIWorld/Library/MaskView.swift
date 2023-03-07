@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MaskView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 9.0)
+            .fill(LinearGradient(gradient: Gradient(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
+        .mask {
+            Text("THIS IS A MASK")
+                .font(.largeTitle)
+                .bold()
+        }
     }
 }
 

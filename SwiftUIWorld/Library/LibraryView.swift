@@ -10,37 +10,37 @@ import SwiftUI
 struct LibraryView: View {
     var body: some View {
         NavigationView {
-               Form {
-                   Section("Simple componantes") {
-                       NavigationLink {
-                           ButtonsView()
-                       } label: {
-                           Label("Button", systemImage: "button.programmable.square")
-                       }
-                       NavigationLink {
-                           ButtonsView()
-                       } label: {
-                           Label("Color Picker", systemImage: "eyedropper.halffull")
-                       }
-                   }
-                   
-                   Section("Loading") {
-                       NavigationLink {
-                           RedactedView()
-                       } label: {
-                           Label("Redacted", systemImage: "text.justify.leading")
-                       }
-                   }
-                   
-                   Section("View Modifier") {
-                       NavigationLink {
-//                           RedactedView()
-                       } label: {
-                           Label("Mask", systemImage: "theatermask.and.paintbrush.fill")
-                       }
-                   }
-               }
-           }
+            Form {
+                Section("Simple componantes") {
+                    NavigationLink {
+                        ButtonsView()
+                    } label: {
+                        Label("Button", systemImage: "button.programmable.square")
+                    }
+                    NavigationLink {
+                        ButtonsView()
+                    } label: {
+                        Label("Color Picker", systemImage: "eyedropper.halffull")
+                    }
+                }
+                
+                Section("Loading") {
+                    NavigationLink {
+                        RedactedView()
+                    } label: {
+                        Label("Redacted", systemImage: "text.justify.leading")
+                    }
+                }
+                
+                Section("View Modifier") {
+                    NavigationLink {
+                        MaskView()
+                    } label: {
+                        Label("Mask", systemImage: "theatermask.and.paintbrush.fill")
+                    }
+                }
+            }
+        }
     }
 }
 
