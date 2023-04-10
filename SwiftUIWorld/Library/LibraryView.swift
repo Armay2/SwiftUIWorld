@@ -39,6 +39,30 @@ struct LibraryView: View {
                         Label("Mask", systemImage: "theatermask.and.paintbrush.fill")
                     }
                 }
+                
+                Section("MapKit") {
+                    NavigationLink {
+                        MapsView()
+                    } label: {
+                        Label("Map", systemImage: "map.fill")
+                    }
+                }
+                
+                Section("AVKit") {
+                    NavigationLink {
+                        CameraView()
+                    } label: {
+                        Label("Camera", systemImage: "camera.fill")
+                    }
+                }
+                
+                Section {
+                    NavigationLink {
+                        GradientView()
+                    } label: {
+                        Label("Gradient", systemImage: "chart.bar.fill")
+                    }
+                }
             }
         }
     }

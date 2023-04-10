@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5129E4322900EB6FE3 /* ActivityRingView.swift */; };
 		510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5329E45CB100EB6FE3 /* RingView.swift */; };
+		510BDD5729E463D200EB6FE3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5629E463D200EB6FE3 /* CameraView.swift */; };
+		510BDD5C29E467BE00EB6FE3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5B29E467BE00EB6FE3 /* CameraViewController.swift */; };
 		5142C25829C118A70065048F /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142C25729C118A70065048F /* MapsView.swift */; };
 		5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182E28529DE2310002B24C5 /* SpeechSynthesizerView.swift */; };
 		51DD742B29B643DF00F667F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742A29B643DF00F667F3 /* MainView.swift */; };
@@ -16,7 +18,6 @@
 		51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742E29B6440400F667F3 /* ButtonsView.swift */; };
 		51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743029B64D8E00F667F3 /* ExperimentsView.swift */; };
 		51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */; };
-		51DD743B29B6542100F667F3 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743A29B6542100F667F3 /* CameraPreviewView.swift */; };
 		51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743C29B6616900F667F3 /* RedactedView.swift */; };
 		51DD744029B6636C00F667F3 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743F29B6636C00F667F3 /* MaskView.swift */; };
 		51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD744129B6CF2600F667F3 /* GradientView.swift */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		510BDD5129E4322900EB6FE3 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 		510BDD5329E45CB100EB6FE3 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		510BDD5629E463D200EB6FE3 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		510BDD5B29E467BE00EB6FE3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5142C25729C118A70065048F /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		5182E28529DE2310002B24C5 /* SpeechSynthesizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizerView.swift; sourceTree = "<group>"; };
 		51DD742A29B643DF00F667F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		51DD742E29B6440400F667F3 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		51DD743029B64D8E00F667F3 /* ExperimentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentsView.swift; sourceTree = "<group>"; };
 		51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectiveUIView.swift; sourceTree = "<group>"; };
-		51DD743A29B6542100F667F3 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		51DD743C29B6616900F667F3 /* RedactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedView.swift; sourceTree = "<group>"; };
 		51DD743F29B6636C00F667F3 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 		51DD744129B6CF2600F667F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,15 @@
 			path = ActivityRing;
 			sourceTree = "<group>";
 		};
+		510BDD5A29E467A900EB6FE3 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				510BDD5629E463D200EB6FE3 /* CameraView.swift */,
+				510BDD5B29E467BE00EB6FE3 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		5182E28329DE22F6002B24C5 /* SpeechSynthesizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				51DD743329B64E0600F667F3 /* ReflectiveUIView.swift */,
-				51DD743A29B6542100F667F3 /* CameraPreviewView.swift */,
 			);
 			path = ReflectiveUI;
 			sourceTree = "<group>";
@@ -144,6 +154,7 @@
 				51DD743F29B6636C00F667F3 /* MaskView.swift */,
 				51DD744129B6CF2600F667F3 /* GradientView.swift */,
 				5142C25729C118A70065048F /* MapsView.swift */,
+				510BDD5A29E467A900EB6FE3 /* Camera */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -341,18 +352,19 @@
 				510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */,
 				5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */,
 				51DD744029B6636C00F667F3 /* MaskView.swift in Sources */,
+				510BDD5C29E467BE00EB6FE3 /* CameraViewController.swift in Sources */,
 				51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */,
 				5142C25829C118A70065048F /* MapsView.swift in Sources */,
 				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
 				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
 				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
 				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
-				51DD743B29B6542100F667F3 /* CameraPreviewView.swift in Sources */,
 				51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */,
 				51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */,
 				51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */,
 				51DD742B29B643DF00F667F3 /* MainView.swift in Sources */,
 				51FEFCF529B641F0008F2A12 /* SwiftUIWorldApp.swift in Sources */,
+				510BDD5729E463D200EB6FE3 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

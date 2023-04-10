@@ -12,7 +12,7 @@ import AVFoundation
 struct Reflection: ViewModifier {
     
     func body(content: Content) -> some View {
-        CameraPreviewView()
+        CameraView()
             .blur(radius: 8)
             .mask(
                 content
@@ -30,23 +30,30 @@ extension View {
 struct ReflectiveUIView: View {
     
     var body: some View {
-        camera
-            .mask(navigationView)
-//        navigationView
-    }
-    
-    var camera: some View {
-        CameraPreviewView()
-            .blur(radius: 8)
-    }
-    
-    var navigationView: some View  {
-        VStack(alignment: .leading) {
-            Text("Title").font(.title)
+        HStack() {
+            myContent
+                .reflective()
             Spacer()
-            ForEach((1...10).reversed(), id: \.self) {
-                Text("This is \($0)")
+        }
+    }
+    
+    var myContent: some View  {
+        VStack(alignment: .leading) {
+            Text("My reflective list")
+                .font(.largeTitle)
+                .bold()
+            Spacer()
+            ForEach((1...7), id: \.self) { num in
+                HStack {
+                    Image(systemName: "\(num).circle.fill").resizable()
+                        .frame(width: 30, height: 30)
+                    VStack(alignment: .leading) {
+                        Text("Hello, World! Longer version").redacted(reason: .placeholder)
+                        Text("Hello, World!").redacted(reason: .placeholder)
+                    }
+                }.padding()
             }
+            Spacer()
         }
     }
 }

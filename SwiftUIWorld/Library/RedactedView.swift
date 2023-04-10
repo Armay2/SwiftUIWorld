@@ -12,7 +12,7 @@ struct RedactedView: View {
         Text("Hello, World!").redacted(reason: .placeholder)
         
         
-//            .redacted(reason: article == nil ? .placeholder : []) loading a asyn object wait and see redected in action
+//            .redacted(reason: article == nil ? .placeholder : [])
 
     }
 }
