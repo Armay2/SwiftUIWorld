@@ -8,36 +8,46 @@
 import SwiftUI
 import AVFoundation
 
+
+struct Reflection: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        CameraPreviewView()
+            .blur(radius: 8)
+            .mask(
+                content
+            )
+    }
+    
+}
+
+extension View {
+    func reflective() -> some View {
+        modifier(Reflection())
+    }
+}
+
 struct ReflectiveUIView: View {
-    let text = "MY Blured"
     
     var body: some View {
+        camera
+            .mask(navigationView)
+//        navigationView
+    }
+    
+    var camera: some View {
         CameraPreviewView()
-        .blur(radius: 8) // Ajout du flou à la vue CameraPreview
-        .mask(
-            Text("My blured text").font(.largeTitle).bold()
-        )
-        
-        
-        
-//        VStack {
-//            Button("Press me!") {
-//                // Action when button is pressed
-//            }
-//            .padding()
-//            .background(
-//                    CameraPreviewView()
-////                        .frame(height: 200)
-//                    //.blur(radius: 8) // Ajout du flou à la vue CameraPreview
-//            )
-//            .cornerRadius(8)
-//            .shadow(radius: 5)
-//        }
-        
-        //        List {
-        //            Text("My text")
-        ////            camera.mask(navigationView)
-        //        }
+            .blur(radius: 8)
+    }
+    
+    var navigationView: some View  {
+        VStack(alignment: .leading) {
+            Text("Title").font(.title)
+            Spacer()
+            ForEach((1...10).reversed(), id: \.self) {
+                Text("This is \($0)")
+            }
+        }
     }
 }
 

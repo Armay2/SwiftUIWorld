@@ -17,6 +17,19 @@ struct ExperimentsView: View {
                        } label: {
                            Label("ReflectiveUI", systemImage: "camera.circle")
                        }
+                       
+                       NavigationLink {
+                           SpeechSynthesizerView()
+                       } label: {
+                           Label("Speech Synthesizer", systemImage: "speaker.wave.2.bubble.left.fill")
+                       }
+                       
+                       NavigationLink {
+                           ActivityRingView()
+                       } label: {
+                           Label("Activity Ring", systemImage: "figure.run.circle")
+                       }
+
                    }
                }.navigationTitle("Experiments")
            }

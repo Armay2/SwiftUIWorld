@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5129E4322900EB6FE3 /* ActivityRingView.swift */; };
+		510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BDD5329E45CB100EB6FE3 /* RingView.swift */; };
+		5142C25829C118A70065048F /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142C25729C118A70065048F /* MapsView.swift */; };
+		5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182E28529DE2310002B24C5 /* SpeechSynthesizerView.swift */; };
 		51DD742B29B643DF00F667F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742A29B643DF00F667F3 /* MainView.swift */; };
 		51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742C29B643F500F667F3 /* LibraryView.swift */; };
 		51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD742E29B6440400F667F3 /* ButtonsView.swift */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510BDD5129E4322900EB6FE3 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
+		510BDD5329E45CB100EB6FE3 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		5142C25729C118A70065048F /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		5182E28529DE2310002B24C5 /* SpeechSynthesizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizerView.swift; sourceTree = "<group>"; };
 		51DD742A29B643DF00F667F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		51DD742C29B643F500F667F3 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		51DD742E29B6440400F667F3 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -90,11 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510BDD5029E4320600EB6FE3 /* ActivityRing */ = {
+			isa = PBXGroup;
+			children = (
+				510BDD5129E4322900EB6FE3 /* ActivityRingView.swift */,
+				510BDD5329E45CB100EB6FE3 /* RingView.swift */,
+			);
+			path = ActivityRing;
+			sourceTree = "<group>";
+		};
+		5182E28329DE22F6002B24C5 /* SpeechSynthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				5182E28529DE2310002B24C5 /* SpeechSynthesizerView.swift */,
+			);
+			path = SpeechSynthesizer;
+			sourceTree = "<group>";
+		};
 		51DD743229B64DED00F667F3 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
 				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
+				5182E28329DE22F6002B24C5 /* SpeechSynthesizer */,
 				51DD743529B6503C00F667F3 /* ReflectiveUI */,
+				510BDD5029E4320600EB6FE3 /* ActivityRing */,
 			);
 			path = Experiments;
 			sourceTree = "<group>";
@@ -116,6 +143,7 @@
 				51DD743C29B6616900F667F3 /* RedactedView.swift */,
 				51DD743F29B6636C00F667F3 /* MaskView.swift */,
 				51DD744129B6CF2600F667F3 /* GradientView.swift */,
+				5142C25729C118A70065048F /* MapsView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -310,9 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */,
+				5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */,
 				51DD744029B6636C00F667F3 /* MaskView.swift in Sources */,
 				51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */,
+				5142C25829C118A70065048F /* MapsView.swift in Sources */,
 				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
+				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
 				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
 				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
 				51DD743B29B6542100F667F3 /* CameraPreviewView.swift in Sources */,

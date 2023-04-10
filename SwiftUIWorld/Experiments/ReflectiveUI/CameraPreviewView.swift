@@ -19,14 +19,14 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     // Detector
     private var videoOutput = AVCaptureVideoDataOutput()
     
-      
+    
     override func viewDidLoad() {
         checkPermission()
         
         sessionQueue.async { [unowned self] in
             guard permissionGranted else { return }
             self.setupCaptureSession()
-
+            
             
             self.captureSession.startRunning()
         }
@@ -35,42 +35,42 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         screenRect = UIScreen.main.bounds
         self.previewLayer.frame = CGRect(x: 0, y: 0, width: screenRect.size.width, height: screenRect.size.height)
-
+        
         switch UIDevice.current.orientation {
             // Home button on top
-            case UIDeviceOrientation.portraitUpsideDown:
-                self.previewLayer.connection?.videoOrientation = .portraitUpsideDown
-             
+        case UIDeviceOrientation.portraitUpsideDown:
+            self.previewLayer.connection?.videoOrientation = .portraitUpsideDown
+            
             // Home button on right
-            case UIDeviceOrientation.landscapeLeft:
-                self.previewLayer.connection?.videoOrientation = .landscapeRight
+        case UIDeviceOrientation.landscapeLeft:
+            self.previewLayer.connection?.videoOrientation = .landscapeRight
             
             // Home button on left
-            case UIDeviceOrientation.landscapeRight:
-                self.previewLayer.connection?.videoOrientation = .landscapeLeft
-             
+        case UIDeviceOrientation.landscapeRight:
+            self.previewLayer.connection?.videoOrientation = .landscapeLeft
+            
             // Home button at bottom
-            case UIDeviceOrientation.portrait:
-                self.previewLayer.connection?.videoOrientation = .portrait
-                
-            default:
-                break
-            }
-            }
+        case UIDeviceOrientation.portrait:
+            self.previewLayer.connection?.videoOrientation = .portrait
+            
+        default:
+            break
+        }
+    }
     
     func checkPermission() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             // Permission has been granted before
-            case .authorized:
-                permissionGranted = true
-                
+        case .authorized:
+            permissionGranted = true
+            
             // Permission has not been requested yet
-            case .notDetermined:
-                requestPermission()
-                    
-            default:
-                permissionGranted = false
-            }
+        case .notDetermined:
+            requestPermission()
+            
+        default:
+            permissionGranted = false
+        }
     }
     
     func requestPermission() {
@@ -85,10 +85,10 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         // Camera input
         guard let videoDevice = AVCaptureDevice.default(.builtInDualWideCamera,for: .video, position: .back) else { return }
         guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice) else { return }
-           
+        
         guard captureSession.canAddInput(videoDeviceInput) else { return }
         captureSession.addInput(videoDeviceInput)
-                         
+        
         // Preview layer
         screenRect = UIScreen.main.bounds
         
@@ -113,8 +113,8 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 struct CameraPreviewView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
         return CameraViewController()
-        }
-
-        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-        }
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+    }
 }
