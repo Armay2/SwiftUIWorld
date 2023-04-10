@@ -50,7 +50,7 @@ struct LibraryView: View {
                 
                 Section("AVKit") {
                     NavigationLink {
-                        CameraView()
+                        CameraView(postion: .back)
                     } label: {
                         Label("Camera", systemImage: "camera.fill")
                     }

@@ -10,12 +10,27 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController {
+
+    
     private var permissionGranted = false // Flag for permission
     private let captureSession = AVCaptureSession()
     private let sessionQueue = DispatchQueue(label: "sessionQueue")
     private var previewLayer = AVCaptureVideoPreviewLayer()
     var screenRect: CGRect! = nil // For view dimensions
-      
+    var cameraPostion: AVCaptureDevice.Position
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    init(permissionGranted: Bool = false, previewLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(), screenRect: CGRect? = nil, cameraPostion: AVCaptureDevice.Position) {
+        self.permissionGranted = permissionGranted
+        self.previewLayer = previewLayer
+        self.screenRect = screenRect
+        self.cameraPostion = cameraPostion
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func viewDidLoad() {
         checkPermission()
         
@@ -78,7 +93,8 @@ class CameraViewController: UIViewController {
     
     func setupCaptureSession() {
         // Camera input
-        guard let videoDevice = AVCaptureDevice.default(.builtInDualWideCamera,for: .video, position: .back) else { return }
+        
+        guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera,for: .video, position: cameraPostion) else { return }
         guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice) else { return }
            
         guard captureSession.canAddInput(videoDeviceInput) else { return }
@@ -101,8 +117,10 @@ class CameraViewController: UIViewController {
 }
 
 struct HostedCamera: UIViewControllerRepresentable {
+    var cameraPostion: AVCaptureDevice.Position = .back
+
     func makeUIViewController(context: Context) -> UIViewController {
-        return CameraViewController()
+        return CameraViewController(cameraPostion: cameraPostion)
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {

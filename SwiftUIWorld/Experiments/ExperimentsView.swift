@@ -29,7 +29,12 @@ struct ExperimentsView: View {
                        } label: {
                            Label("Activity Ring", systemImage: "figure.run.circle")
                        }
-
+                       
+                       NavigationLink {
+                           ObjectReflectionView()
+                       } label: {
+                           Label("Object Reflection View", systemImage: "oval.portrait.inset.filled")
+                       }
                    }
                }.navigationTitle("Experiments")
            }

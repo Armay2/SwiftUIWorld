@@ -7,12 +7,13 @@
 
 import SwiftUI
 import UIKit
+import AVFoundation
 
 struct CameraView: View {
+    let postion: AVCaptureDevice.Position
     
     var body: some View {
-        HostedCamera()
-            .ignoresSafeArea()
+        HostedCamera(cameraPostion: postion)
     }
 }
 
@@ -21,6 +22,6 @@ struct CameraView: View {
 
 struct CameraView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        CameraView(postion: .back)
     }
 }
