@@ -35,6 +35,12 @@ struct ExperimentsView: View {
                        } label: {
                            Label("Object Reflection View", systemImage: "oval.portrait.inset.filled")
                        }
+                       
+                       NavigationLink {
+                           FidelityView()
+                       } label: {
+                           Label("Fidelity View", systemImage: "checkmark.seal.fill")
+                       }
                    }
                }.navigationTitle("Experiments")
            }
