@@ -31,6 +31,8 @@
 		51FEFD0729B641F2008F2A12 /* SwiftUIWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD0629B641F2008F2A12 /* SwiftUIWorldTests.swift */; };
 		51FEFD1129B641F2008F2A12 /* SwiftUIWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */; };
 		51FEFD1329B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */; };
+		662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC5192CB524A300C38FC5 /* View+PushTo.swift */; };
+		662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC51B2CB524C000C38FC5 /* PushToView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		51FEFD0C29B641F2008F2A12 /* SwiftUIWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITests.swift; sourceTree = "<group>"; };
 		51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		662EC5192CB524A300C38FC5 /* View+PushTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+PushTo.swift"; sourceTree = "<group>"; };
+		662EC51B2CB524C000C38FC5 /* PushToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		51DD743229B64DED00F667F3 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				662EC5182CB5247300C38FC5 /* PushToModifier */,
 				5101DD8D2A16467900EFA5B2 /* Fidelity */,
 				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
 				51205BDE29F19FC900912B77 /* BottumView.swift */,
@@ -242,6 +247,15 @@
 				51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIWorldUITests;
+			sourceTree = "<group>";
+		};
+		662EC5182CB5247300C38FC5 /* PushToModifier */ = {
+			isa = PBXGroup;
+			children = (
+				662EC5192CB524A300C38FC5 /* View+PushTo.swift */,
+				662EC51B2CB524C000C38FC5 /* PushToView.swift */,
+			);
+			path = PushToModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +392,7 @@
 				510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */,
 				51205BDF29F19FC900912B77 /* BottumView.swift in Sources */,
 				5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */,
+				662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */,
 				51DD744029B6636C00F667F3 /* MaskView.swift in Sources */,
 				510BDD5C29E467BE00EB6FE3 /* CameraViewController.swift in Sources */,
 				510BDD5F29E483CD00EB6FE3 /* ObjectReflectionView.swift in Sources */,
@@ -387,6 +402,7 @@
 				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
 				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
 				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
+				662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */,
 				51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */,
 				51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */,
 				51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */,
