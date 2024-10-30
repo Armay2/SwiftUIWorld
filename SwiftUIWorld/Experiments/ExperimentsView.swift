@@ -41,6 +41,12 @@ struct ExperimentsView: View {
                        } label: {
                            Label("Fidelity View", systemImage: "checkmark.seal.fill")
                        }
+                       
+                       NavigationLink {
+                           PushToView()
+                       } label: {
+                           Label("PushTo View", systemImage: "arrow.down.left.and.arrow.up.right.square.fill")
+                       }
                    }
                }.navigationTitle("Experiments")
            }
