@@ -47,6 +47,16 @@ struct ExperimentsView: View {
                        } label: {
                            Label("PushTo View", systemImage: "arrow.down.left.and.arrow.up.right.square.fill")
                        }
+                       
+                       NavigationLink {
+                           if #available(iOS 18.0, *) {
+                               TransitionFullScreen()
+                           } else {
+                               Text("ONly ios 18")
+                           }
+                       } label: {
+                           Label("TransitionFullScreen", systemImage: "photo.artframe")
+                       }
                    }
                }.navigationTitle("Experiments")
            }
