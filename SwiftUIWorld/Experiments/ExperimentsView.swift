@@ -57,6 +57,18 @@ struct ExperimentsView: View {
                        } label: {
                            Label("TransitionFullScreen", systemImage: "photo.artframe")
                        }
+
+                       NavigationLink {
+                           ShareLocationView()
+                       } label: {
+                           Label("ShareLocation View", systemImage: "square.and.arrow.up.circle")
+                       }
+
+                       NavigationLink {
+                           LottiesView()
+                       } label: {
+                           Label("Lotties View", systemImage: "heart.fill")
+                       }
                    }
                }.navigationTitle("Experiments")
            }
