@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct TransitionFullScreen: View {
+struct ManualTransitionFullScreen: View {
     @State var selectedImageIndex: Int = 0
     @State var showCarousel: Bool = false
     
@@ -83,5 +83,5 @@ struct FullScreenImageView: View {
 }
 
 #Preview("TransitionFullScreenTwo") {
-    TransitionFullScreen()
+    ManualTransitionFullScreen()
 }

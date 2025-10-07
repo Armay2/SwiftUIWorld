@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section("Simple componantes") {
                     NavigationLink {

@@ -34,10 +34,9 @@
 		662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC5192CB524A300C38FC5 /* View+PushTo.swift */; };
 		662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC51B2CB524C000C38FC5 /* PushToView.swift */; };
 		6649CFB62D11D2150017ECF0 /* Wind.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 6649CFB52D11D2150017ECF0 /* Wind.lottie */; };
-		6655B1162D103E9D003F7228 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6655B1152D103E9D003F7228 /* BlurView.swift */; };
 		665E5B532D11C3D6003FE4E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 665E5B522D11C3D6003FE4E3 /* Lottie */; };
 		665E5B562D11C3EC003FE4E3 /* LottiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E5B552D11C3EC003FE4E3 /* LottiesView.swift */; };
-		66B58B812CD2223100108119 /* TransitionFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B58B802CD2223100108119 /* TransitionFullScreen.swift */; };
+		66B58B812CD2223100108119 /* ManualTransitionFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */; };
 		66E2AD462D005C45000A0B9A /* ShareLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2AD452D005C40000A0B9A /* ShareLocationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,9 +89,8 @@
 		662EC5192CB524A300C38FC5 /* View+PushTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+PushTo.swift"; sourceTree = "<group>"; };
 		662EC51B2CB524C000C38FC5 /* PushToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToView.swift; sourceTree = "<group>"; };
 		6649CFB52D11D2150017ECF0 /* Wind.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.lottie; sourceTree = "<group>"; };
-		6655B1152D103E9D003F7228 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		665E5B552D11C3EC003FE4E3 /* LottiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiesView.swift; sourceTree = "<group>"; };
-		66B58B802CD2223100108119 /* TransitionFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionFullScreen.swift; sourceTree = "<group>"; };
+		66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTransitionFullScreen.swift; sourceTree = "<group>"; };
 		66E2AD452D005C40000A0B9A /* ShareLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,10 +169,10 @@
 		51DD743229B64DED00F667F3 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				66DEB7C02E94FC8C00BF3D5F /* LiquidGlass */,
 				665E5B542D11C3DE003FE4E3 /* LottiesView */,
-				6655B1142D103E87003F7228 /* BlurView */,
 				66E2AD442D005C34000A0B9A /* ShareLocation */,
-				66B58B7F2CD2220600108119 /* TransitionFullScreen */,
+				66B58B7F2CD2220600108119 /* ManualTransitionFullScreen */,
 				662EC5182CB5247300C38FC5 /* PushToModifier */,
 				5101DD8D2A16467900EFA5B2 /* Fidelity */,
 				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
@@ -279,14 +277,6 @@
 			path = PushToModifier;
 			sourceTree = "<group>";
 		};
-		6655B1142D103E87003F7228 /* BlurView */ = {
-			isa = PBXGroup;
-			children = (
-				6655B1152D103E9D003F7228 /* BlurView.swift */,
-			);
-			path = BlurView;
-			sourceTree = "<group>";
-		};
 		665E5B542D11C3DE003FE4E3 /* LottiesView */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,12 +286,19 @@
 			path = LottiesView;
 			sourceTree = "<group>";
 		};
-		66B58B7F2CD2220600108119 /* TransitionFullScreen */ = {
+		66B58B7F2CD2220600108119 /* ManualTransitionFullScreen */ = {
 			isa = PBXGroup;
 			children = (
-				66B58B802CD2223100108119 /* TransitionFullScreen.swift */,
+				66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */,
 			);
-			path = TransitionFullScreen;
+			path = ManualTransitionFullScreen;
+			sourceTree = "<group>";
+		};
+		66DEB7C02E94FC8C00BF3D5F /* LiquidGlass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LiquidGlass;
 			sourceTree = "<group>";
 		};
 		66E2AD442D005C34000A0B9A /* ShareLocation */ = {
@@ -462,12 +459,11 @@
 				5142C25829C118A70065048F /* MapsView.swift in Sources */,
 				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
 				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
-				66B58B812CD2223100108119 /* TransitionFullScreen.swift in Sources */,
+				66B58B812CD2223100108119 /* ManualTransitionFullScreen.swift in Sources */,
 				66E2AD462D005C45000A0B9A /* ShareLocationView.swift in Sources */,
 				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
 				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
 				662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */,
-				6655B1162D103E9D003F7228 /* BlurView.swift in Sources */,
 				51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */,
 				51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */,
 				51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExperimentsView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
                Form {
                    Section("Basics") {
                        NavigationLink {
@@ -50,12 +50,12 @@ struct ExperimentsView: View {
                        
                        NavigationLink {
                            if #available(iOS 18.0, *) {
-                               TransitionFullScreen()
+                               ManualTransitionFullScreen()
                            } else {
                                Text("ONly ios 18")
                            }
                        } label: {
-                           Label("TransitionFullScreen", systemImage: "photo.artframe")
+                           Label("ManualTransitionFullScreen", systemImage: "photo.artframe")
                        }
 
                        NavigationLink {
