@@ -19,8 +19,6 @@ struct MaskView: View {
     }
 }
 
-struct MaskView_Previews: PreviewProvider {
-    static var previews: some View {
-        MaskView()
-    }
+#Preview {
+    MaskView()
 }

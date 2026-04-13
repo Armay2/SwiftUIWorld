@@ -17,8 +17,6 @@ struct MapsView: View {
     }
 }
 
-struct MapsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapsView()
-    }
+#Preview {
+    MapsView()
 }

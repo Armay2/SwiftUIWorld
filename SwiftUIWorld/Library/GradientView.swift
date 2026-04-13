@@ -34,8 +34,6 @@ struct GradientView: View {
     }
 }
 
-struct GradientView_Previews: PreviewProvider {
-    static var previews: some View {
-        GradientView()
-    }
+#Preview {
+    GradientView()
 }

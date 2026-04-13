@@ -17,8 +17,6 @@ struct RedactedView: View {
     }
 }
 
-struct RedactedView_Previews: PreviewProvider {
-    static var previews: some View {
-        RedactedView()
-    }
+#Preview {
+    RedactedView()
 }

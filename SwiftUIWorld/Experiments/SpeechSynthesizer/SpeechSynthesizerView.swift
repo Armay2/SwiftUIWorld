@@ -49,8 +49,6 @@ struct SpeechSynthesizerView: View {
 // com.apple.eloquence.fr-FR.Sandy - Sandy
 // com.apple.eloquence.fr-FR.Eddy - Eddy
 
-struct SpeechSynthesizerView_Previews: PreviewProvider {
-    static var previews: some View {
-        SpeechSynthesizerView()
-    }
+#Preview {
+    SpeechSynthesizerView()
 }

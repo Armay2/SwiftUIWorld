@@ -58,8 +58,6 @@ struct ReflectiveUIView: View {
     }
 }
 
-struct ReflectiveUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReflectiveUIView()
-    }
+#Preview {
+    ReflectiveUIView()
 }

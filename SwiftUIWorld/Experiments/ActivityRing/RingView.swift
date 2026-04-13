@@ -50,8 +50,6 @@ struct RingView: View {
     }
 }
 
-struct RingView_Previews: PreviewProvider {
-    static var previews: some View {
-        RingView(percent: 12, ringColor: .blue)
-    }
+#Preview {
+    RingView(percent: 12, ringColor: .blue)
 }

@@ -51,8 +51,6 @@ struct ActivityRingView: View {
     }
 }
 
-struct ActivityRingVeiw_Previews: PreviewProvider {
-    static var previews: some View {
-        ActivityRingView()
-    }
+#Preview {
+    ActivityRingView()
 }

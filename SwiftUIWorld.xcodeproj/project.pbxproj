@@ -25,18 +25,21 @@
 		51DD744029B6636C00F667F3 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD743F29B6636C00F667F3 /* MaskView.swift */; };
 		51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD744129B6CF2600F667F3 /* GradientView.swift */; };
 		51FEFCF529B641F0008F2A12 /* SwiftUIWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */; };
-		51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFCF629B641F0008F2A12 /* ContentView.swift */; };
 		51FEFCF929B641F2008F2A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FEFCF829B641F2008F2A12 /* Assets.xcassets */; };
 		51FEFCFD29B641F2008F2A12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FEFCFC29B641F2008F2A12 /* Preview Assets.xcassets */; };
 		51FEFD0729B641F2008F2A12 /* SwiftUIWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD0629B641F2008F2A12 /* SwiftUIWorldTests.swift */; };
 		51FEFD1129B641F2008F2A12 /* SwiftUIWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */; };
 		51FEFD1329B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */; };
+		661D6F4D2F5081D1007F7753 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661D6F4C2F5081C9007F7753 /* ConfirmButton.swift */; };
 		662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC5192CB524A300C38FC5 /* View+PushTo.swift */; };
 		662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC51B2CB524C000C38FC5 /* PushToView.swift */; };
 		6649CFB62D11D2150017ECF0 /* Wind.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 6649CFB52D11D2150017ECF0 /* Wind.lottie */; };
 		665E5B532D11C3D6003FE4E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 665E5B522D11C3D6003FE4E3 /* Lottie */; };
 		665E5B562D11C3EC003FE4E3 /* LottiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E5B552D11C3EC003FE4E3 /* LottiesView.swift */; };
+		666F3B8D2F8CE3FF00619215 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */; };
 		66B58B812CD2223100108119 /* ManualTransitionFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */; };
+		66DEB7C22E94FCDE00BF3D5F /* LiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB7C12E94FCDD00BF3D5F /* LiquidGlass.swift */; };
+		66DEB7C92E9804E100BF3D5F /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB7C82E9804DE00BF3D5F /* Flow.swift */; };
 		66E2AD462D005C45000A0B9A /* ShareLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2AD452D005C40000A0B9A /* ShareLocationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +80,6 @@
 		51DD744129B6CF2600F667F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		51FEFCF129B641F0008F2A12 /* SwiftUIWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldApp.swift; sourceTree = "<group>"; };
-		51FEFCF629B641F0008F2A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51FEFCF829B641F2008F2A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FEFCFA29B641F2008F2A12 /* SwiftUIWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIWorld.entitlements; sourceTree = "<group>"; };
 		51FEFCFC29B641F2008F2A12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,11 +88,15 @@
 		51FEFD0C29B641F2008F2A12 /* SwiftUIWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITests.swift; sourceTree = "<group>"; };
 		51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		661D6F4C2F5081C9007F7753 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		662EC5192CB524A300C38FC5 /* View+PushTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+PushTo.swift"; sourceTree = "<group>"; };
 		662EC51B2CB524C000C38FC5 /* PushToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToView.swift; sourceTree = "<group>"; };
 		6649CFB52D11D2150017ECF0 /* Wind.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.lottie; sourceTree = "<group>"; };
 		665E5B552D11C3EC003FE4E3 /* LottiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiesView.swift; sourceTree = "<group>"; };
+		666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTransitionFullScreen.swift; sourceTree = "<group>"; };
+		66DEB7C12E94FCDD00BF3D5F /* LiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlass.swift; sourceTree = "<group>"; };
+		66DEB7C82E9804DE00BF3D5F /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		66E2AD452D005C40000A0B9A /* ShareLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,13 +175,16 @@
 		51DD743229B64DED00F667F3 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
+				666F3B8B2F8CE3EA00619215 /* RangeSlider */,
+				661D6F4B2F5081C1007F7753 /* CustomButton */,
+				66DEB7C72E9804D900BF3D5F /* Flow */,
 				66DEB7C02E94FC8C00BF3D5F /* LiquidGlass */,
 				665E5B542D11C3DE003FE4E3 /* LottiesView */,
 				66E2AD442D005C34000A0B9A /* ShareLocation */,
 				66B58B7F2CD2220600108119 /* ManualTransitionFullScreen */,
 				662EC5182CB5247300C38FC5 /* PushToModifier */,
 				5101DD8D2A16467900EFA5B2 /* Fidelity */,
-				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
 				51205BDE29F19FC900912B77 /* BottumView.swift */,
 				5182E28329DE22F6002B24C5 /* SpeechSynthesizer */,
 				510BDD5D29E483AC00EB6FE3 /* ObjectReflection */,
@@ -232,7 +241,6 @@
 			children = (
 				51FEFCF429B641F0008F2A12 /* SwiftUIWorldApp.swift */,
 				665E5B592D11C52D003FE4E3 /* Lottie */,
-				51FEFCF629B641F0008F2A12 /* ContentView.swift */,
 				51DD742A29B643DF00F667F3 /* MainView.swift */,
 				51DD743E29B6635100F667F3 /* Library */,
 				51DD743229B64DED00F667F3 /* Experiments */,
@@ -268,6 +276,14 @@
 			path = SwiftUIWorldUITests;
 			sourceTree = "<group>";
 		};
+		661D6F4B2F5081C1007F7753 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				661D6F4C2F5081C9007F7753 /* ConfirmButton.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
 		662EC5182CB5247300C38FC5 /* PushToModifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +302,14 @@
 			path = LottiesView;
 			sourceTree = "<group>";
 		};
+		666F3B8B2F8CE3EA00619215 /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */,
+			);
+			path = RangeSlider;
+			sourceTree = "<group>";
+		};
 		66B58B7F2CD2220600108119 /* ManualTransitionFullScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,8 +321,17 @@
 		66DEB7C02E94FC8C00BF3D5F /* LiquidGlass */ = {
 			isa = PBXGroup;
 			children = (
+				66DEB7C12E94FCDD00BF3D5F /* LiquidGlass.swift */,
 			);
 			path = LiquidGlass;
+			sourceTree = "<group>";
+		};
+		66DEB7C72E9804D900BF3D5F /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				66DEB7C82E9804DE00BF3D5F /* Flow.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		66E2AD442D005C34000A0B9A /* ShareLocation */ = {
@@ -448,14 +481,17 @@
 			files = (
 				665E5B562D11C3EC003FE4E3 /* LottiesView.swift in Sources */,
 				5101DD8F2A16469B00EFA5B2 /* FidelityView.swift in Sources */,
+				661D6F4D2F5081D1007F7753 /* ConfirmButton.swift in Sources */,
 				510BDD5429E45CB100EB6FE3 /* RingView.swift in Sources */,
 				51205BDF29F19FC900912B77 /* BottumView.swift in Sources */,
 				5182E28629DE2310002B24C5 /* SpeechSynthesizerView.swift in Sources */,
 				662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */,
 				51DD744029B6636C00F667F3 /* MaskView.swift in Sources */,
+				66DEB7C92E9804E100BF3D5F /* Flow.swift in Sources */,
 				510BDD5C29E467BE00EB6FE3 /* CameraViewController.swift in Sources */,
 				510BDD5F29E483CD00EB6FE3 /* ObjectReflectionView.swift in Sources */,
 				51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */,
+				666F3B8D2F8CE3FF00619215 /* RangeSlider.swift in Sources */,
 				5142C25829C118A70065048F /* MapsView.swift in Sources */,
 				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
 				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
@@ -464,7 +500,7 @@
 				51DD743D29B6616900F667F3 /* RedactedView.swift in Sources */,
 				51DD742F29B6440400F667F3 /* ButtonsView.swift in Sources */,
 				662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */,
-				51FEFCF729B641F0008F2A12 /* ContentView.swift in Sources */,
+				66DEB7C22E94FCDE00BF3D5F /* LiquidGlass.swift in Sources */,
 				51DD743429B64E0600F667F3 /* ReflectiveUIView.swift in Sources */,
 				51DD743129B64D8E00F667F3 /* ExperimentsView.swift in Sources */,
 				51DD742B29B643DF00F667F3 /* MainView.swift in Sources */,
@@ -642,7 +678,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -682,7 +718,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;

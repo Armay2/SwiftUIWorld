@@ -7,76 +7,80 @@
 
 import SwiftUI
 
+struct Experiment: Identifiable {
+    let id = UUID()
+    let title: String
+    let systemImage: String
+    let destination: () -> AnyView
+}
+
+extension Experiment {
+    static let all: [Experiment] = [
+        Experiment(title: "ReflectiveUI",
+                   systemImage: "camera.circle",
+                   destination: { AnyView(ReflectiveUIView()) }),
+        Experiment(title: "Speech Synthesizer",
+                   systemImage: "speaker.wave.2.bubble.left.fill",
+                   destination: { AnyView(SpeechSynthesizerView()) }),
+        Experiment(title: "Activity Ring",
+                   systemImage: "figure.run.circle",
+                   destination: { AnyView(ActivityRingView()) }),
+        Experiment(title: "Object Reflection View",
+                   systemImage: "oval.portrait.inset.filled",
+                   destination: { AnyView(ObjectReflectionView()) }),
+        Experiment(title: "Fidelity View",
+                   systemImage: "checkmark.seal.fill",
+                   destination: { AnyView(FidelityView()) }),
+        Experiment(title: "PushTo View",
+                   systemImage: "arrow.down.left.and.arrow.up.right.square.fill",
+                   destination: { AnyView(PushToView()) }),
+        Experiment(title: "ManualTransitionFullScreen",
+                   systemImage: "photo.artframe",
+                   destination: {
+                       if #available(iOS 18.0, *) {
+                           AnyView(ManualTransitionFullScreen())
+                       } else {
+                           AnyView(Text("Only iOS 18+"))
+                       }
+                   }),
+        Experiment(title: "ShareLocation View",
+                   systemImage: "square.and.arrow.up.circle",
+                   destination: { AnyView(ShareLocationView()) }),
+        Experiment(title: "Lotties View",
+                   systemImage: "heart.fill",
+                   destination: { AnyView(LottiesView()) }),
+        Experiment(title: "Confirm Button",
+                   systemImage: "stop.circle",
+                   destination: {
+                       AnyView(ConfirmButton(action: { print("Confirmed!") }))
+                   }),
+        Experiment(title: "Flow Layout",
+                   systemImage: "rectangle.3.group",
+                   destination: { AnyView(DemoFlow()) }),
+        Experiment(title: "Liquid Glass",
+                   systemImage: "drop.fill",
+                   destination: { AnyView(LiquidGlass()) }),
+        Experiment(title: "Range Slider",
+                   systemImage: "slider.horizontal.below.square.and.square.filled",
+                   destination: { AnyView(RangeSliderPlayground()) }),
+    ]
+}
+
 struct ExperimentsView: View {
     var body: some View {
         NavigationStack {
-               Form {
-                   Section("Basics") {
-                       NavigationLink {
-                           ReflectiveUIView()
-                       } label: {
-                           Label("ReflectiveUI", systemImage: "camera.circle")
-                       }
-                       
-                       NavigationLink {
-                           SpeechSynthesizerView()
-                       } label: {
-                           Label("Speech Synthesizer", systemImage: "speaker.wave.2.bubble.left.fill")
-                       }
-                       
-                       NavigationLink {
-                           ActivityRingView()
-                       } label: {
-                           Label("Activity Ring", systemImage: "figure.run.circle")
-                       }
-                       
-                       NavigationLink {
-                           ObjectReflectionView()
-                       } label: {
-                           Label("Object Reflection View", systemImage: "oval.portrait.inset.filled")
-                       }
-                       
-                       NavigationLink {
-                           FidelityView()
-                       } label: {
-                           Label("Fidelity View", systemImage: "checkmark.seal.fill")
-                       }
-                       
-                       NavigationLink {
-                           PushToView()
-                       } label: {
-                           Label("PushTo View", systemImage: "arrow.down.left.and.arrow.up.right.square.fill")
-                       }
-                       
-                       NavigationLink {
-                           if #available(iOS 18.0, *) {
-                               ManualTransitionFullScreen()
-                           } else {
-                               Text("ONly ios 18")
-                           }
-                       } label: {
-                           Label("ManualTransitionFullScreen", systemImage: "photo.artframe")
-                       }
-
-                       NavigationLink {
-                           ShareLocationView()
-                       } label: {
-                           Label("ShareLocation View", systemImage: "square.and.arrow.up.circle")
-                       }
-
-                       NavigationLink {
-                           LottiesView()
-                       } label: {
-                           Label("Lotties View", systemImage: "heart.fill")
-                       }
-                   }
-               }.navigationTitle("Experiments")
-           }
+            List(Experiment.all) { experiment in
+                NavigationLink {
+                    experiment.destination()
+                } label: {
+                    Label(experiment.title, systemImage: experiment.systemImage)
+                }
+            }
+            .navigationTitle("Experiments")
+        }
     }
 }
 
-struct ExperimentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExperimentsView()
-    }
+#Preview {
+    ExperimentsView()
 }

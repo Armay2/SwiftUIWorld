@@ -13,8 +13,6 @@ struct ObjectReflectionView: View {
     }
 }
 
-struct ObjectReflectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ObjectReflectionView()
-    }
+#Preview {
+    ObjectReflectionView()
 }

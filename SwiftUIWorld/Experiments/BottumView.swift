@@ -64,8 +64,6 @@ struct BottumView: View {
     }
 }
 
-struct BottumView_Previews: PreviewProvider {
-    static var previews: some View {
-        BottumView()
-    }
+#Preview {
+    BottumView()
 }

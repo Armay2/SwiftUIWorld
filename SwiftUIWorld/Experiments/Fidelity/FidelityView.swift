@@ -102,8 +102,6 @@ struct FidelityView: View {
     }
 }
 
-struct FidelityView_Previews: PreviewProvider {
-    static var previews: some View {
-        FidelityView()
-    }
+#Preview {
+    FidelityView()
 }
