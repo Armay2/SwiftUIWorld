@@ -11,14 +11,14 @@ struct LibraryView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Simple componantes") {
+                Section("Simple Components") {
                     NavigationLink {
                         ButtonsView()
                     } label: {
                         Label("Button", systemImage: "button.programmable.square")
                     }
                     NavigationLink {
-                        ButtonsView()
+                        ColorPickerView()
                     } label: {
                         Label("Color Picker", systemImage: "eyedropper.halffull")
                     }
@@ -50,7 +50,7 @@ struct LibraryView: View {
                 
                 Section("AVKit") {
                     NavigationLink {
-                        CameraView(postion: .back)
+                        CameraView(position: .back)
                     } label: {
                         Label("Camera", systemImage: "camera.fill")
                     }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ManualTransitionFullScreen.swift
 //  SwiftUIWorld
 //
 //  Created by Arnaud Nommay on 30/10/2024.
@@ -65,7 +65,7 @@ struct FullScreenImageView: View {
                     Image(source)
                         .resizable()
                         .scaledToFit()
-                        .cornerRadius(12)
+                        .clipShape(.rect(cornerRadius: 12))
                         .padding()
                         .tag(index)
                 }

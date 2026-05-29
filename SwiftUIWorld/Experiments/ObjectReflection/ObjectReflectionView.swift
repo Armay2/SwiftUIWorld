@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ObjectReflectionView: View {
     var body: some View {
-        CameraView(postion: .front)
+        CameraView(position: .front)
     }
 }
 

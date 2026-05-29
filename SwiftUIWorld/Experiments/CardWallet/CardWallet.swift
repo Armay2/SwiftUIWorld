@@ -20,7 +20,7 @@ import UIKit
 ///
 /// WalletCarousel(items: myCards, selectedIndex: $selected) { card in
 ///     MyCardView(card: card)
-/// }Can
+/// }
 /// ```
 struct WalletCarousel<Item: Identifiable, CardContent: View>: View {
     let items: [Item]

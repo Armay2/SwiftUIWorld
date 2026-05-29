@@ -9,11 +9,16 @@ import SwiftUI
 import MapKit
 
 struct MapsView: View {
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.604, longitude: 1.44305), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var position: MapCameraPosition = .region(
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 43.604, longitude: 1.44305),
+            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+        )
+    )
 
 
     var body: some View {
-        Map(coordinateRegion: $region).ignoresSafeArea()
+        Map(position: $position).ignoresSafeArea()
     }
 }
 

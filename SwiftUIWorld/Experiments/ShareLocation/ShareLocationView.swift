@@ -1,11 +1,9 @@
 //
-//  ShareAddress.swift
+//  ShareLocationView.swift
 //  SwiftUIWorld
 //
 //  Created by Arnaud Nommay on 04/12/2024.
 //
-
-import SwiftUI
 
 import SwiftUI
 

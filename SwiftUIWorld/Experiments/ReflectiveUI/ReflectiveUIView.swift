@@ -12,7 +12,7 @@ import AVFoundation
 struct Reflection: ViewModifier {
     
     func body(content: Content) -> some View {
-        CameraView(postion: .back)
+        CameraView(position: .back)
             .blur(radius: 8)
             .mask(
                 content

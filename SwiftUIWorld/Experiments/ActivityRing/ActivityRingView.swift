@@ -1,5 +1,5 @@
 //
-//  ActivityRingVeiw.swift
+//  ActivityRingView.swift
 //  SwiftUIWorld
 //
 //  Created by Arnaud NOMMAY on 10/04/2023.

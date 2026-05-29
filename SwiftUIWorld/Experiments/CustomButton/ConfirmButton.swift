@@ -19,7 +19,7 @@ struct ConfirmButton: View {
                 .resizable()
                 .frame(width: 50, height: 50)
         }
-        .buttonStyle(PlainButtonStyle())
+        .buttonStyle(.plain)
     }
 
     private func buttonPressed() {

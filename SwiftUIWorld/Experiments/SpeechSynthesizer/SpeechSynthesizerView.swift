@@ -23,10 +23,9 @@ struct SpeechSynthesizerView: View {
             }, label: {
                 Text("Lire le texte")
                     .font(.headline)
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                     .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                    .background(.blue, in: .rect(cornerRadius: 10))
             })
         }
     }
@@ -35,6 +34,7 @@ struct SpeechSynthesizerView: View {
         let utterance = AVSpeechUtterance(string: text)
 //        utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
         utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.siri_female_fr-FR_compact")
+            ?? AVSpeechSynthesisVoice(language: "fr-FR")
 
         
         synthesizer.speak(utterance)

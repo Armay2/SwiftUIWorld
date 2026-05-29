@@ -74,7 +74,7 @@ struct FidelityGauge: View {
                             Spacer()
                         }
                         Circle()
-                            .foregroundColor(currentPoints < step.milestone ? step.color : currentStep.color)
+                            .foregroundStyle(currentPoints < step.milestone ? step.color : currentStep.color)
                             .frame(width: 20, height: 20)
                         if step != .diamond {
                             Spacer()

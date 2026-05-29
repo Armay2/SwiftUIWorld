@@ -50,7 +50,7 @@ struct ButtonsView: View {
                 Button {
                     //
                 } label: {
-                    Text("Text").foregroundColor(.red)
+                    Text("Text").foregroundStyle(.red)
                 }
             }
         }.navigationTitle("Buttons")

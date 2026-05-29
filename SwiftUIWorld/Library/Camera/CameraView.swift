@@ -10,10 +10,10 @@ import UIKit
 import AVFoundation
 
 struct CameraView: View {
-    let postion: AVCaptureDevice.Position
+    let position: AVCaptureDevice.Position
     
     var body: some View {
-        HostedCamera(cameraPostion: postion)
+        HostedCamera(cameraPosition: position)
     }
 }
 
@@ -21,5 +21,5 @@ struct CameraView: View {
 
 
 #Preview {
-    CameraView(postion: .back)
+    CameraView(position: .back)
 }
