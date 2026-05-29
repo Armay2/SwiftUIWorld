@@ -43,6 +43,7 @@ struct SlideToStopPlayground: View {
                 Image(systemName: "bolt.car.fill")
                     .font(.title2)
                     .foregroundStyle(.green)
+                    .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Charging").font(.headline)
                     Text(statusText).font(.subheadline).foregroundStyle(.secondary)
@@ -53,7 +54,7 @@ struct SlideToStopPlayground: View {
             SlideToStop(phase: $phase)
         }
         .padding()
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 24))
         .padding(.horizontal)
     }
 

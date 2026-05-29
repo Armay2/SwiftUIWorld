@@ -63,6 +63,9 @@ extension Experiment {
         Experiment(title: "Range Slider",
                    systemImage: "slider.horizontal.below.square.and.square.filled",
                    destination: { AnyView(RangeSliderPlayground()) }),
+        Experiment(title: "Slide to Stop",
+                   systemImage: "bolt.slash.fill",
+                   destination: { AnyView(SlideToStopPlayground()) }),
     ]
 }
 
