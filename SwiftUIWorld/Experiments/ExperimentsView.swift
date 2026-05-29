@@ -63,9 +63,21 @@ extension Experiment {
         Experiment(title: "Range Slider",
                    systemImage: "slider.horizontal.below.square.and.square.filled",
                    destination: { AnyView(RangeSliderPlayground()) }),
+        Experiment(title: "Card Wallet",
+                   systemImage: "creditcard.fill",
+                   destination: { AnyView(CardWalletPlayground()) }),
         Experiment(title: "Slide to Stop",
                    systemImage: "bolt.slash.fill",
                    destination: { AnyView(SlideToStopPlayground()) }),
+        Experiment(title: "ToolBox",
+                   systemImage: "bolt.car.fill",
+                   destination: {
+                       if #available(iOS 26.0, *) {
+                           AnyView(ToolBox())
+                       } else {
+                           AnyView(Text("Only iOS 26+"))
+                       }
+                   }),
     ]
 }
 

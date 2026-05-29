@@ -31,14 +31,20 @@
 		51FEFD1129B641F2008F2A12 /* SwiftUIWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */; };
 		51FEFD1329B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */; };
 		661D6F4D2F5081D1007F7753 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661D6F4C2F5081C9007F7753 /* ConfirmButton.swift */; };
+		6627C53C2FA3B3BE001D43DB /* ToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627C53B2FA3B3BE001D43DB /* ToolBox.swift */; };
 		662EC51A2CB524A300C38FC5 /* View+PushTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC5192CB524A300C38FC5 /* View+PushTo.swift */; };
 		662EC51C2CB524C000C38FC5 /* PushToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EC51B2CB524C000C38FC5 /* PushToView.swift */; };
 		6649CFB62D11D2150017ECF0 /* Wind.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 6649CFB52D11D2150017ECF0 /* Wind.lottie */; };
+		66510A0001A0B1C2D3E4F503 /* SlideToStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A0001A0B1C2D3E4F501 /* SlideToStop.swift */; };
+		66510A0001A0B1C2D3E4F504 /* SlideToStopPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A0001A0B1C2D3E4F502 /* SlideToStopPlayground.swift */; };
+		665480CF2FC05C2400D73E2C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665480CB2FC05C2400D73E2C /* CardView.swift */; };
+		665480D02FC05C2400D73E2C /* CardWalletPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665480CD2FC05C2400D73E2C /* CardWalletPlayground.swift */; };
+		665480D12FC05C2400D73E2C /* CardWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665480CC2FC05C2400D73E2C /* CardWallet.swift */; };
+		665480D22FC05C2400D73E2C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665480CA2FC05C2400D73E2C /* Card.swift */; };
 		665E5B532D11C3D6003FE4E3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 665E5B522D11C3D6003FE4E3 /* Lottie */; };
 		665E5B562D11C3EC003FE4E3 /* LottiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E5B552D11C3EC003FE4E3 /* LottiesView.swift */; };
 		666F3B8D2F8CE3FF00619215 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */; };
-		66510A0001A0B1C2D3E4F503 /* SlideToStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A0001A0B1C2D3E4F501 /* SlideToStop.swift */; };
-		66510A0001A0B1C2D3E4F504 /* SlideToStopPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A0001A0B1C2D3E4F502 /* SlideToStopPlayground.swift */; };
+		666F3B8F2F8CE3FF00619215 /* RangeSliderPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666F3B8E2F8CE3FF00619215 /* RangeSliderPlayground.swift */; };
 		66B58B812CD2223100108119 /* ManualTransitionFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */; };
 		66DEB7C22E94FCDE00BF3D5F /* LiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB7C12E94FCDD00BF3D5F /* LiquidGlass.swift */; };
 		66DEB7C92E9804E100BF3D5F /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB7C82E9804DE00BF3D5F /* Flow.swift */; };
@@ -91,13 +97,19 @@
 		51FEFD1029B641F2008F2A12 /* SwiftUIWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITests.swift; sourceTree = "<group>"; };
 		51FEFD1229B641F2008F2A12 /* SwiftUIWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		661D6F4C2F5081C9007F7753 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
+		6627C53B2FA3B3BE001D43DB /* ToolBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBox.swift; sourceTree = "<group>"; };
 		662EC5192CB524A300C38FC5 /* View+PushTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+PushTo.swift"; sourceTree = "<group>"; };
 		662EC51B2CB524C000C38FC5 /* PushToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToView.swift; sourceTree = "<group>"; };
 		6649CFB52D11D2150017ECF0 /* Wind.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.lottie; sourceTree = "<group>"; };
-		665E5B552D11C3EC003FE4E3 /* LottiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiesView.swift; sourceTree = "<group>"; };
-		666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		66510A0001A0B1C2D3E4F501 /* SlideToStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToStop.swift; sourceTree = "<group>"; };
 		66510A0001A0B1C2D3E4F502 /* SlideToStopPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToStopPlayground.swift; sourceTree = "<group>"; };
+		665480CA2FC05C2400D73E2C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		665480CB2FC05C2400D73E2C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		665480CC2FC05C2400D73E2C /* CardWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWallet.swift; sourceTree = "<group>"; };
+		665480CD2FC05C2400D73E2C /* CardWalletPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWalletPlayground.swift; sourceTree = "<group>"; };
+		665E5B552D11C3EC003FE4E3 /* LottiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiesView.swift; sourceTree = "<group>"; };
+		666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		666F3B8E2F8CE3FF00619215 /* RangeSliderPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderPlayground.swift; sourceTree = "<group>"; };
 		66B58B802CD2223100108119 /* ManualTransitionFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTransitionFullScreen.swift; sourceTree = "<group>"; };
 		66DEB7C12E94FCDD00BF3D5F /* LiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlass.swift; sourceTree = "<group>"; };
 		66DEB7C82E9804DE00BF3D5F /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
@@ -179,9 +191,10 @@
 		51DD743229B64DED00F667F3 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				665480CE2FC05C2400D73E2C /* CardWallet */,
+				66510A0001A0B1C2D3E4F505 /* SlideToStop */,
 				51DD743029B64D8E00F667F3 /* ExperimentsView.swift */,
 				666F3B8B2F8CE3EA00619215 /* RangeSlider */,
-				66510A0001A0B1C2D3E4F505 /* SlideToStop */,
 				661D6F4B2F5081C1007F7753 /* CustomButton */,
 				66DEB7C72E9804D900BF3D5F /* Flow */,
 				66DEB7C02E94FC8C00BF3D5F /* LiquidGlass */,
@@ -195,6 +208,7 @@
 				510BDD5D29E483AC00EB6FE3 /* ObjectReflection */,
 				51DD743529B6503C00F667F3 /* ReflectiveUI */,
 				510BDD5029E4320600EB6FE3 /* ActivityRing */,
+				660E22862FC9D85E00672336 /* ToolBox */,
 			);
 			path = Experiments;
 			sourceTree = "<group>";
@@ -281,6 +295,14 @@
 			path = SwiftUIWorldUITests;
 			sourceTree = "<group>";
 		};
+		660E22862FC9D85E00672336 /* ToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				6627C53B2FA3B3BE001D43DB /* ToolBox.swift */,
+			);
+			path = ToolBox;
+			sourceTree = "<group>";
+		};
 		661D6F4B2F5081C1007F7753 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +320,26 @@
 			path = PushToModifier;
 			sourceTree = "<group>";
 		};
+		66510A0001A0B1C2D3E4F505 /* SlideToStop */ = {
+			isa = PBXGroup;
+			children = (
+				66510A0001A0B1C2D3E4F501 /* SlideToStop.swift */,
+				66510A0001A0B1C2D3E4F502 /* SlideToStopPlayground.swift */,
+			);
+			path = SlideToStop;
+			sourceTree = "<group>";
+		};
+		665480CE2FC05C2400D73E2C /* CardWallet */ = {
+			isa = PBXGroup;
+			children = (
+				665480CA2FC05C2400D73E2C /* Card.swift */,
+				665480CB2FC05C2400D73E2C /* CardView.swift */,
+				665480CC2FC05C2400D73E2C /* CardWallet.swift */,
+				665480CD2FC05C2400D73E2C /* CardWalletPlayground.swift */,
+			);
+			path = CardWallet;
+			sourceTree = "<group>";
+		};
 		665E5B542D11C3DE003FE4E3 /* LottiesView */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,17 +353,9 @@
 			isa = PBXGroup;
 			children = (
 				666F3B8C2F8CE3FF00619215 /* RangeSlider.swift */,
+				666F3B8E2F8CE3FF00619215 /* RangeSliderPlayground.swift */,
 			);
 			path = RangeSlider;
-			sourceTree = "<group>";
-		};
-		66510A0001A0B1C2D3E4F505 /* SlideToStop */ = {
-			isa = PBXGroup;
-			children = (
-				66510A0001A0B1C2D3E4F501 /* SlideToStop.swift */,
-				66510A0001A0B1C2D3E4F502 /* SlideToStopPlayground.swift */,
-			);
-			path = SlideToStop;
 			sourceTree = "<group>";
 		};
 		66B58B7F2CD2220600108119 /* ManualTransitionFullScreen */ = {
@@ -506,10 +540,16 @@
 				510BDD5F29E483CD00EB6FE3 /* ObjectReflectionView.swift in Sources */,
 				51DD742D29B643F500F667F3 /* LibraryView.swift in Sources */,
 				666F3B8D2F8CE3FF00619215 /* RangeSlider.swift in Sources */,
-				66510A0001A0B1C2D3E4F503 /* SlideToStop.swift in Sources */,
-				66510A0001A0B1C2D3E4F504 /* SlideToStopPlayground.swift in Sources */,
+				666F3B8F2F8CE3FF00619215 /* RangeSliderPlayground.swift in Sources */,
 				5142C25829C118A70065048F /* MapsView.swift in Sources */,
 				51DD744229B6CF2600F667F3 /* GradientView.swift in Sources */,
+				665480CF2FC05C2400D73E2C /* CardView.swift in Sources */,
+				665480D02FC05C2400D73E2C /* CardWalletPlayground.swift in Sources */,
+				665480D12FC05C2400D73E2C /* CardWallet.swift in Sources */,
+				665480D22FC05C2400D73E2C /* Card.swift in Sources */,
+				66510A0001A0B1C2D3E4F503 /* SlideToStop.swift in Sources */,
+				66510A0001A0B1C2D3E4F504 /* SlideToStopPlayground.swift in Sources */,
+				6627C53C2FA3B3BE001D43DB /* ToolBox.swift in Sources */,
 				510BDD5229E4322900EB6FE3 /* ActivityRingView.swift in Sources */,
 				66B58B812CD2223100108119 /* ManualTransitionFullScreen.swift in Sources */,
 				66E2AD462D005C45000A0B9A /* ShareLocationView.swift in Sources */,
